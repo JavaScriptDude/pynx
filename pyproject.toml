@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "pynx"
+version = "0.1.0"
+description = "CLI tool for managing nginx daemon, sites and associated wsgi services"
+license = "MIT"
+authors = ["Timothy C. Quinn"]
+readme = "README.md"
+homepage = "https://pypi.org/project/pynx"
+repository = "https://github.com/JavaScriptDude/pynx"
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Console',
+    'Intended Audience :: System Administrators',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: POSIX :: BSD',
+    'Operating System :: POSIX :: SunOS/Solaris',
+    'Operating System :: MacOS :: MacOS X',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+     'Topic :: System :: Systems Administration',
+]
+packages = [{ include = "src" },]
+include = ["README.md"]
+
+[tool.poetry.dependencies]
+python = "^3.7.9"
+texttable = "^1.6.3"
+gixy = "^0.1.20"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
